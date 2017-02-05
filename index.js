@@ -1,5 +1,5 @@
 var snake;
-var size =  21;
+var boxSize =  21;
 var cheese;
 function setup(){
   createCanvas(800,800);
@@ -8,10 +8,10 @@ function setup(){
  pickLocation();
 }
 function pickLocation(){
-  var cols = floor(width/size);
-  var rows = floor(height/size);
+  var cols = floor(width/boxSize);
+  var rows = floor(height/boxSize);
   cheese = createVector(floor(random(cols)), floor(random(rows)))
-  cheese.mult(size);
+  cheese.mult(boxSize);
 }
 function draw(){
   background(51);
@@ -24,7 +24,7 @@ function draw(){
   };
 
   fill(244,0,0)
-  rect(cheese.x, cheese.y,size,size)
+  rect(cheese.x, cheese.y,boxSize,boxSize)
 }
 function keyPressed(){
   if (keyCode  === UP_ARROW){
