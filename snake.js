@@ -38,18 +38,18 @@ function Snake(){
     }
     this.tail[this.total-1] = createVector(this.x,this.y);
 
-    this.x += this.xspeed*szs;
-    this.y += this.yspeed*szs;
+    this.x += this.xspeed*size;
+    this.y += this.yspeed*size;
 
-    this.x =constrain(this.x, 0, width-szs)
-    this.y =constrain(this.y, 0, height-szs)
+    this.x =constrain(this.x, 0, width-size)
+    this.y =constrain(this.y, 0, height-size)
   }
 
   this.show = function(){
     fill(255)
     for (var i=0; i<this.total; i++){
-      rect(this.tail[i].x, this.tail[i].y,szs,szs)
+      rect(this.tail[i].x, this.tail[i].y,size,size)
     }
-    rect(this.x,this.y,szs,szs)
+    rect(this.x,this.y,size,size)
   }
 }
