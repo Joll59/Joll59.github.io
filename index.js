@@ -1,11 +1,11 @@
 var snake;
-var boxSize =  21;
+var boxSize =  15;
 var cheese;
 function setup(){
   var canvas = createCanvas(600,600);
   canvas.parent('snakeContainer');
  snake  = new Snake();
- frameRate(6);
+ frameRate(10);
  pickLocation();
 }
 function pickLocation(){
