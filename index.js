@@ -1,42 +1,42 @@
-var s;
-var szs =  15;
+var snake;
+var size =  21;
 var cheese;
 function setup(){
-  createCanvas(600,600);
- s  = new Snake();
+  createCanvas(800,800);
+ snake  = new Snake();
  frameRate(6);
  pickLocation();
 }
 function pickLocation(){
-  var cols = floor(width/szs);
-  var rows = floor(height/szs);
+  var cols = floor(width/size);
+  var rows = floor(height/size);
   cheese = createVector(floor(random(cols)), floor(random(rows)))
-  cheese.mult(szs);
+  cheese.mult(size);
 }
 function draw(){
   background(51);
-  s.death();
-  s.update()
-  s.show()
+  snake.death();
+  snake.update()
+  snake.show()
 
-  if(s.eat(cheese)){
+  if(snake.eat(cheese)){
     pickLocation()
   };
 
   fill(244,0,0)
-  rect(cheese.x, cheese.y,szs,szs)
+  rect(cheese.x, cheese.y,size,size)
 }
 function keyPressed(){
   if (keyCode  === UP_ARROW){
-   s.dir(0,-1)
+   snake.dir(0,-1)
   }
   else if (keyCode === DOWN_ARROW){
-    s.dir (0,1)
+    snake.dir (0,1)
   }
   else if (keyCode === RIGHT_ARROW){
-    s.dir (1,0)
+    snake.dir (1,0)
   }
   else if (keyCode === LEFT_ARROW){
-    s.dir (-1,0 )
+    snake.dir (-1,0 )
   }
 }
