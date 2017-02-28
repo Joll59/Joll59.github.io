@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Adapter Pattern | e pluºriºbus uºnum!</title>
+  <title>Adapter Pattern | Out of Many, The Few!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" href="/blog/favicon.ico">
   <link rel="stylesheet" href="/blog/css/app.css">
@@ -43,15 +43,18 @@
 
   <section class="article-entry">
     <p>Set this on action/index.js</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">axios.defaults.baseURL = <span class="string">'http://localhost:3000/api/v1'</span></div><div class="line">axios.defaults.headers.common[<span class="string">'AUTHORIZATION'</span>] = sessionStorage.getItem(<span class="string">'jwt'</span>)</div></pre></td></tr></table></figure>
+<p><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">axios.defaults.baseURL = <span class="string">'http://localhost:3000/api/v1'</span></div><div class="line">axios.defaults.headers.common[<span class="string">'AUTHORIZATION'</span>] = sessionStorage.getItem(<span class="string">'jwt'</span>)</div></pre></td></tr></table></figure></p>
 <ul>
 <li>Use sessionStorage to check response stores!</li>
 </ul>
-<p>Set this in controller!<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">token = request.headers[<span class="string">"HTTP_AUTHORIZATION"</span>]</div><div class="line">If  token</div><div class="line">	user_info = Auth.decode(token)</div><div class="line">	@current_user <span class="params">||</span>= User.find(user_info[<span class="string">'user_id'</span>])</div></pre></td></tr></table></figure></p>
+<p>Set this in controller!
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">token = request.headers[<span class="string">"HTTP_AUTHORIZATION"</span>]</div><div class="line">If  token</div><div class="line">	user_info = Auth.decode(token)</div><div class="line">	@current_user <span class="params">||</span>= User.find(user_info[<span class="string">'user_id'</span>])</div></pre></td></tr></table></figure></p>
 <ul>
-<li>new folder /adapters<ul>
+<li>new folder /adapters
+<ul>
 <li>userAdapter.js</li>
-<li>export default notesAdapter = {<br>  fetchNotes: , loginUser: , createNote: , updateNote: , }     </li>
+<li>export default notesAdapter = {
+fetchNotes: , loginUser: , createNote: , updateNote: , }</li>
 </ul>
 </li>
 </ul>
@@ -63,7 +66,7 @@
   <section class="profile grid-item grid">
     <img class="avatar" src="/blog/blog/images/avatar.png" alt="avatar" />
     <div class="grid-item">
-      <p class="title"> e pluºriºbus uºnum! </p>
+      <p class="title"> Out of Many, The Few! </p>
       <p class="subtitle"> No No No!!! </p>
     <div>
   </section>
@@ -112,7 +115,7 @@
 </section>
 
 <script>
-  var disqus_shortname = 'Yomi';
+  var disqus_shortname = 'Out of Many, The Few!';
   
   var disqus_url = 'http://joll59.github.io/blog/blog/2017/02/28/Adapter Patterns/';
   
