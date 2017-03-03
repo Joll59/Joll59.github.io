@@ -1,8 +1,23 @@
+/*.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 @font-face {
   font-family: 'Source Code Pro';
   font-style: normal;
   font-weight: 400;
-  src: local("Source Code Pro"), local("SourceCodePro-Regular"), url(http://7xrcp8.com1.z0.glb.clouddn.com/Source%20Code%20Pro.woff) format("woff"); }
+  src: local("Source Code Pro"), local("SourceCodePro-Regular"), url(http://7xrcp8.com1.z0.glb.clouddn.com/Source%20Code%20Pro.woff) format("woff"); }*/
 
 * {
   box-sizing: border-box; }
