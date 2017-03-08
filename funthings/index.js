@@ -2,9 +2,9 @@ var snake;
 var boxSize =  15;
 var cheese;
 function setup(){
-  var canvas = createCanvas(300,300);
+  var canvas = createCanvas(400,400);
   ellipseMode(CENTER);
-  ellipse(35, 35, 50, 50) 
+  ellipse(35, 35, 50, 50)
   canvas.parent('snakeContainer');
  snake  = new Snake();
  frameRate(10);
@@ -17,7 +17,7 @@ function pickLocation(){
   cheese.mult(boxSize);
 }
 function draw(){
-  background(51);
+  background(50);
   snake.death();
   snake.update()
   snake.show()
