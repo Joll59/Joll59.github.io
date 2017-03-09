@@ -2,7 +2,7 @@ var snake;
 var boxSize =  15;
 var cheese;
 function setup(){
-  var canvas = createCanvas(400,400);
+  var canvas = createCanvas(450,450);
   ellipseMode(CENTER);
   ellipse(35, 35, 50, 50)
   canvas.parent('snakeContainer');

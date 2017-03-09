@@ -1,3 +1,5 @@
+
+
 .hover-bg-twitter-blue:focus, .hover-bg-twitter-blue:hover {
     background-color: #0084b4
 }
@@ -16,4 +18,17 @@
 
 .hover-bg-google2:focus, .hover-bg-google2:hover {
     background-color: #4885ed
+}
+
+.about{
+padding-top: 52px;
+}
+
+nav {
+  position: relative;
+}
+.nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
