@@ -1,20 +1,17 @@
-var snake;
-var boxSize =  15;
-var cheese;
-function setup(){
-  var canvas = createCanvas(450,450);
-  ellipseMode(CENTER);
-  ellipse(35, 35, 50, 50)
-  canvas.parent('snakeContainer');
- snake  = new Snake();
- frameRate(10);
- pickLocation();
+var snake, boxSize =  15, cheese;
+function setup() {
+    var canvas = createCanvas(450, 450);
+    ellipseMode(CENTER);
+    ellipse(35, 35, 50, 50);
+    canvas.parent('snakeContainer');
+    snake = new Snake();
+    frameRate(10);
+    pickLocation();
 }
-function pickLocation(){
-  var cols = floor(width/boxSize);
-  var rows = floor(height/boxSize);
-  cheese = createVector(floor(random(cols)), floor(random(rows)))
-  cheese.mult(boxSize);
+function pickLocation() {
+      var cols = floor(width / boxSize), rows = floor(height / boxSize);
+        cheese = createVector(floor(random(cols)), floor(random(rows)))
+        cheese.mult(boxSize);
 }
 function draw(){
   background(50);
