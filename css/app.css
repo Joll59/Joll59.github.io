@@ -45,15 +45,6 @@ background-color: rgba(0, 0, 0, .9);
 z-index: 10;
 }
 
-/*
-.about{
-background-attachment: fixed;
-background-image: url(../Img/Half-underabove-water.jpg15.jpg);
-background-position: center center;
-background-repeat: none;
-background-size: cover;
-}
-*/
 
 body {
 background-attachment: fixed;
@@ -71,13 +62,3 @@ height: 100%
     }
 }
 
-/*
-.contact {
-background-attachment: fixed;
-background-image: url(../Img/These-15-Above-Water-12.jpg);
-background-position: center center;
-background-repeat: none;
-background-size: cover;
-transform: rotate(180deg);
-}
-*/
