@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/card.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
     <link rel="stylesheet" href="./css/app.css" />
     <link rel="stylesheet" href="./css/tachyons.css" />
     <link rel="stylesheet" href="./css/font-awesome.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Out of Many, the few!</title>
 </head>
 
@@ -43,7 +43,7 @@
         <a class="b f4 f3-l link white-80 hover-bg-light-pink dib pa3 ph4-l" href="#about">About</a>
         <a class="b f4 f3-l link white-80 hover-bg-light-green dib pa3 ph4-l" href="#projects">Projects</a>
         <a class="b f4 f3-l link white-80 hover-bg-light-blue dib pa3 ph4-l" href="https://medium.com/@alajide" target="_blank">Blog</a>
-<!--        <a class="b f4 f3-l link white-80 hover-bg-light-yellow dib pa3 ph4-l" href="#contact">Contact</a>-->
+        <!--        <a class="b f4 f3-l link white-80 hover-bg-light-yellow dib pa3 ph4-l" href="#contact">Contact</a>-->
     </nav>
     <!--Main body-->
     <div class="contain" class="body2">
@@ -51,7 +51,8 @@
         <section id="about" class="about">
             <div class="pa3 pa5-ns tc center mt0 contain bg-white">
                 <h2 class="tc center"> Story Time! </h2>
-                <p class="center f5 lh-copy justify-center">A graduate from the Flatiron Schools full-time immersive web-developemt program. Prior research coordinator, personal trainer, lab technician. I started coding out of curiosity, curiosity turned into a passion.I wanted to build things out of nothing, the challenges faced along the way were just a bonus.
+                <p class="center f5 lh-copy justify-center">A graduate from the Flatiron Schools full-time immersive web-developemt program. Prior research coordinator, personal trainer, lab technician. I started coding out of curiosity, curiosity turned into a passion.I wanted to build things
+                    out of nothing, the challenges faced along the way were just a bonus.
                 </p>
                 <div class="container tc content-center">
                     <a class="hover-bg-google grow-large no-underline hover-white black-70 inline-flex items-center ma2 tc br2 pa2" href="./files/Yomi%20Lajide%20Resum%C3%A9.pdf" title="View my Resume" target="_blank" style="vertical-align: top"><i class="fa fa-2x fa-file-pdf-o" aria-hidden="true "></i></a>
@@ -63,70 +64,151 @@
 
         <!--Projects-->
         <section id="projects" class="projects">
-            <div class="container tc center black-80 tc pv4 bg-near-white mt6">
+            <div class="container black-80 tc pv4 bg-near-white mt6">
                 <div class="pb4">
-                    <h2> Prior Projects </h2>
+                    <h2>Projects</h2>
                     <a href="./funthings/index.html" class="link bg-black-30 w2 h2 br-100 dib">
                     </a>
                 </div>
 
-                <div class="ui link three stackable cards">
-                  <div class="card">
-                          <div class="image">
-                            <a href="http://www.puddlr.co" class="link" target="_blank "><img src="./Img/puddlr.png"></a>
+                <div class="ui four stackable special cards">
+                    <div class="card">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <a href="https://dwein9.github.io/rollout" target="_blank ">
+                                        <div class="center">
+                                            <div class="ui inverted button">
+                                                <h1>RollOut!</h1>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="./Img/RollOut.png">
                         </div>
                         <div class="content">
-                            <div class="header">Puddlr</a></div>
-                            <div class="meta">
-                                <a href="https://github.com/Franco84/Puddlr" target="_blank">Github</a>
+                            <!--
+                            <div class="header">
+                                RollOut
                             </div>
+-->
                             <div class="description">
-                                Puddlr is a creative commuting app, connecting drivers to passengers from the same company.
+                                A creative memeory game designed to challenge your working memory. Built on JavaScript and jQuery.
                             </div>
+                        </div>
+                        <div class="meta">
+                            <a href="https://github.com/dwein9/rollout" target="_blank"><i class="fa fa-2x fa-github"></i></a>
+                        </div>
+                        <div class="extra content">
+                            <span>Collaborators: David</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <a href="http://chefdujour.herokuapp.com" target="_blank ">
+                                        <div class="center">
+                                            <div class="ui inverted button">
+                                                <h1>Chef Du Jour!</h1>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="./Img/ChefDuJour.png">
+                        </div>
+                        <div class="content">
+                            <!--
+                            <div class="header">
+                                RollOut
+                            </div>
+-->
+                            <div class="description">
+                                A responsive single page web application where users can book amateur or professional chefs to cook for them in their own home.
+                            </div>
+                        </div>
+                        <div class="meta">
+                            <a href="https://github.com/robhitt/chef-du-jour-react" target="_blank">React   <i class="fa fa-2x fa-github-alt">  </i></a>
+                            <a href="https://github.com/Joll59/chef-du-jour-rails-api" target="_blank">  <i class="fa fa-2x fa-github"></i> API</a>
+                        </div>
+                        <div class="extra content">
+                            <span>Collaborators: Rob/Josh</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <a href="http://www.puddlr.co" target="_blank" class="link">
+                                        <div class="center">
+                                            <div class="ui inverted button">
+                                                <h1>Puddlr</h1>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="./Img/puddlr.png">
+                        </div>
+                        <div class="ui content">
+                            <!--
+                                <div class="header">
+                                    Puddlr
+                                </div>
+-->
+                            <div class="description">
+                                A creative commuting app, connecting drivers to passengers from the same company.
+                            </div>
+                        </div>
+                        <div class="meta">
+                            <a href="https://github.com/Franco84/Puddlr" target="_blank"><i class="fa fa-2x fa-github"></i></a>
                         </div>
                         <div class="extra content">
                             <span>Collaborators: Joe/Franco</span>
                         </div>
                     </div>
-
                     <div class="card">
-                            <div class="image">
-                              <a href="https://dwein9.github.io/first-game" class="link" target="_blank "><img src="./Img/RollOut.png"></a>
-                          </div>
-                          <div class="content">
-                              <div class="header">RollOut</a></div>
-                              <div class="meta">
-                                  <a href="https://github.com/dwein9/first-game" target="_blank">Github</a>
-                              </div>
-                              <div class="description">
-                                  RollOut is creative memeory game designed to challenge your working memory. Built solely on JavaScript and jQuery.
-                              </div>
-                          </div>
-                          <div class="extra content">
-                              <span>Collaborators: David</span>
-                          </div>
-                      </div>
-
-                      <div class="card">
-                              <div class="image">
-                                <a href="https://joll59.github.io/WikiViewer" class="link" target="_blank "><img src="./Img/WikiView.png"></a>
-                            </div>
-                            <div class="content">
-                                <div class="header">WikiViewer</a></div>
-                                <div class="meta">
-                                    <a href="https://github.com/joll59/WikiViewer" target="_blank">Github</a>
-                                </div>
-                                <div class="description">
-                                    A Simple wikimedia search box and random wiki viewer.
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <a href="https://joll59.github.io/WikiViewer" class="link" target="_blank ">
+                                        <div class="center">
+                                            <div class="ui inverted button">
+                                                <h1>WikiView</h1>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="extra content">
+                            <img src="./Img/WikiView2.png">
+                        </div>
+                        <div class="content">
+                            <!--
+                            <div class="header">
+                                WikiViewer
+                            </div>
+-->
+                            <div class="description">
+                                A search box and random button for WikiMedia, with an iframe to view results.
                             </div>
                         </div>
+                        <div class="meta">
+                            <a href="https://github.com/joll59/WikiViewer" target="_blank"><i class="fa fa-2x fa-github"></i></a>
+                        </div>
+                        <div class="extra content">
+                            No Collaborators
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
+        <!--
+          <section class="slider">
+            Testing Carousel
+          </section>
+-->
         <!--Contact Info-->
         <section id="contact" class="contact">
             <div class="container tc content-center">
@@ -164,6 +246,8 @@
     <!--scripts-->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.glide/1.0.6/jquery.glide.min.js"></script>
 </body>
 
 </html>
